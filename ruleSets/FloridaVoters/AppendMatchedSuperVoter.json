@@ -1,0 +1,5 @@
+{
+  "name": "AppendMatchedSuperVoter",
+  "rule": "INSERT INTO SuperVoters\nSELECT v.* \nFROM Voters v \nWHERE \nv.county_code = :county_code AND \nv.voter_id= :voter_id AND\n(\n\tSELECT COUNT(*) FROM Elections AS e\n\tLEFT JOIN Histories AS h \n\tON e.county_code = h.county_code AND \n\te.election_date = h.election_date AND \n\te.election_type = h.election_type AND \n\th.voter_id = :voter_id\n\tWHERE \n\te.county_code = :county_code AND \n\te.election_date >= (\n\t\tSELECT v2.registration_date \n\t\tFROM Voters v2 \n\t\tWHERE \n\t\tv2.county_code = v.county_code AND \n\t\tv2.voter_id=v.voter_id \n\t\tORDER BY v2.registration_date \n\t\tDESC LIMIT 1\n\t) AND\n\th.county_code IS NULL\n) = 0 \nORDER BY v.export_date DESC \nLIMIT 1",
+  "class": "edu.usf.RuleChains.SQLQuery"
+}
