@@ -1,0 +1,5 @@
+{
+  "name": "GetMaxExportDate",
+  "rule": "SELECT MAX(export_date) AS export_date FROM Voters",
+  "class": "edu.usf.RuleChains.SQLQuery"
+}

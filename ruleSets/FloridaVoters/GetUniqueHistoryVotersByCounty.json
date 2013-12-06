@@ -1,0 +1,5 @@
+{
+  "name": "GetUniqueHistoryVotersByCounty",
+  "rule": "SELECT voter_id,county_code \nFROM Histories \nWHERE county_code = :CountyCode GROUP BY voter_id",
+  "class": "edu.usf.RuleChains.SQLQuery"
+}

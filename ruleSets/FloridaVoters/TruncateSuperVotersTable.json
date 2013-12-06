@@ -1,0 +1,5 @@
+{
+  "name": "TruncateSuperVotersTable",
+  "rule": "TRUNCATE TABLE SuperVoters",
+  "class": "edu.usf.RuleChains.SQLQuery"
+}

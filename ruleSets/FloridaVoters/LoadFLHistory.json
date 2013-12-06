@@ -1,0 +1,5 @@
+{
+  "name": "LoadFLHistory",
+  "rule": "1LOAD DATA LOCAL INFILE '${importFile}'\nINTO TABLE `Histories_import`\nFIELDS TERMINATED BY '\\\\t'\nLINES TERMINATED BY '\\\\n'\n(`county_code`,\n `voter_id`,\n @ElectionDate,\n `election_type`)\nSET `export_date` = STR_TO_DATE('${snapshotDate}','%Y%m%d'),\n`election_date` = STR_TO_DATE(@ElectionDate,'%m/%d/%Y')\n",
+  "class": "edu.usf.RuleChains.SQLQuery"
+}

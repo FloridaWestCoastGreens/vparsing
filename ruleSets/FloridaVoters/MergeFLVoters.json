@@ -1,0 +1,5 @@
+{
+  "name": "MergeFLVoters",
+  "rule": "INSERT INTO `Voters` SELECT * FROM `Voters_import`\nON DUPLICATE KEY UPDATE `Voters`.`export_date` = IF(VALUES(`export_date`) = `Voters`.`export_date`,`Voters`.`export_date`,VALUES(`export_date`))",
+  "class": "edu.usf.RuleChains.SQLQuery"
+}

@@ -1,0 +1,5 @@
+{
+  "name": "GetUniqueVotersByCountyHistory",
+  "rule": "SELECT voter_id,county_code,'${export_date}' AS export_date FROM Histories WHERE county_code = :CountyCode GROUP BY voter_id",
+  "class": "edu.usf.RuleChains.SQLQuery"
+}

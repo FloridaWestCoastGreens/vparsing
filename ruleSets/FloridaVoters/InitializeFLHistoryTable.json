@@ -1,0 +1,5 @@
+{
+  "name": "InitializeFLHistoryTable",
+  "rule": "CREATE TABLE IF NOT EXISTS `Histories` (\n  `county_code` char(3) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',\n  `voter_id` bigint(18) unsigned NOT NULL DEFAULT '0',\n  `election_date` date NOT NULL DEFAULT '0000-00-00',\n  `election_type` char(3) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',\n  `export_date` date NOT NULL,\n  PRIMARY KEY (`county_code`,`voter_id`,`election_date`,`election_type`),\n  KEY `county_code` (`county_code`),\n  KEY `voter_id` (`voter_id`),\n  KEY `election_date` (`election_date`),\n  KEY `election_type` (`election_type`),\n  KEY `export_date` (`export_date`)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci",
+  "class": "edu.usf.RuleChains.SQLQuery"
+}

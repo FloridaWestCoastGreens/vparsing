@@ -1,0 +1,5 @@
+{
+  "name": "TruncateElectionsTable",
+  "rule": "TRUNCATE TABLE Elections",
+  "class": "edu.usf.RuleChains.SQLQuery"
+}

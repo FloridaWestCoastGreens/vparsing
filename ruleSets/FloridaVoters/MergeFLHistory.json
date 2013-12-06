@@ -1,0 +1,5 @@
+{
+  "name": "MergeFLHistory",
+  "rule": "INSERT INTO `Histories` SELECT * FROM `Histories_import`\nON DUPLICATE KEY UPDATE `Histories`.`export_date` = IF(VALUES(`export_date`) > `Histories`.`export_date`,`Histories`.`export_date`,VALUES(`export_date`))",
+  "class": "edu.usf.RuleChains.SQLQuery"
+}

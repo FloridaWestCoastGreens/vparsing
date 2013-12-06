@@ -1,0 +1,5 @@
+{
+  "name": "InitializeFLElectionsTable",
+  "rule": "CREATE TABLE IF NOT EXISTS `Elections` (\n  `county_code` char(3) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',\n  `election_date` date NOT NULL DEFAULT '0000-00-00',\n  `election_type` char(3) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',\n  PRIMARY KEY (`county_code`,`election_date`,`election_type`),\n  KEY `county_code` (`county_code`),\n  KEY `election_date` (`election_date`),\n  KEY `election_type` (`election_type`)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci\n",
+  "class": "edu.usf.RuleChains.SQLQuery"
+}

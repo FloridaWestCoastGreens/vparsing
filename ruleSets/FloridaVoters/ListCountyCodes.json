@@ -1,0 +1,5 @@
+{
+  "name": "ListCountyCodes",
+  "rule": "SELECT CountyCode FROM CountyCodes;",
+  "class": "edu.usf.RuleChains.SQLQuery"
+}
