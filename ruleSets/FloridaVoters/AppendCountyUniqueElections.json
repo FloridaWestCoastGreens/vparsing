@@ -1,0 +1,5 @@
+{
+  "name": "AppendCountyUniqueElections",
+  "rule": "INSERT INTO Elections\nSELECT county_code,election_date,election_type \nFROM Histories \nWHERE county_code = :CountyCode \nGROUP BY county_code,election_date,election_type",
+  "class": "edu.usf.RuleChains.SQLQuery"
+}
