@@ -1,0 +1,5 @@
+{
+  "name": "DisableKeysFLVoters",
+  "rule": "ALTER TABLE `Voters` DISABLE KEYS",
+  "class": "edu.usf.RuleChains.SQLQuery"
+}

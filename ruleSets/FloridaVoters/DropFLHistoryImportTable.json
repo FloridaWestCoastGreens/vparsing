@@ -1,0 +1,5 @@
+{
+  "name": "DropFLHistoryImportTable",
+  "rule": "DROP TABLE IF EXISTS `Histories_import`",
+  "class": "edu.usf.RuleChains.SQLQuery"
+}
