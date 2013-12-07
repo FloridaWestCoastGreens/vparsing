@@ -1,0 +1,5 @@
+{
+  "name": "AddIndexGACountiesCountyCode",
+  "rule": "CREATE UNIQUE INDEX \"County Codes_County Code_idx\" ON \"Georgia\".\"County Codes\" USING btree (\"County Code\")",
+  "class": "edu.usf.RuleChains.SQLQuery"
+}

@@ -1,0 +1,11 @@
+{
+  "sequenceNumber": 1,
+  "sourceName": "gpga_pg",
+  "inputReorder": "",
+  "outputReorder": "",
+  "executeEnum": "NORMAL",
+  "resultEnum": "UPDATE",
+  "linkEnum": "NONE",
+  "rule": "IntializeGACountiesTablePG",
+  "class": "edu.usf.RuleChains.Link"
+}

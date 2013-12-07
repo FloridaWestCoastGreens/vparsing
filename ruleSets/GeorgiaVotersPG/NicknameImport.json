@@ -1,0 +1,5 @@
+{
+  "name": "NicknameImport",
+  "rule": "def settings = [\n\timportFolder: '/usr/share/tomcat/',\n\timportFolderMac: '/Applications/NetBeans/apache-tomcat-7.0.41/Voters/Georgia'\n]\ndef tempfiles = []\ndef filecount = 0\ndef ln = System.getProperty('line.separator')\ndef nicknames = []\nnew File(settings.importFolder + 'names1.2.csv').eachLine { line ->\n\tdef arr = line.tokenize(\",\")\n\tnicknames << arr[1..<arr.size()].collect { n ->\n\t\treturn [name:arr.first(),nickname:n,type:'multi']\n\t}\n}\nsql.withBatch(2, \"\"\"INSERT INTO \"public\".\"Nicknames\" (\"Name\",\"Nickname\",\"MatchType\") VALUES (:name,:nickname,:type)\"\"\") { ps ->\n\tnicknames.unique().each { nn ->\n\t\tps.addBatch(nn)\n\t}\n}",
+  "class": "edu.usf.RuleChains.Groovy"
+}

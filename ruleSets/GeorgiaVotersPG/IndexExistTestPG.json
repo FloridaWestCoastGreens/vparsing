@@ -1,0 +1,5 @@
+{
+  "name": "IndexExistTestPG",
+  "rule": "SELECT 1 AS \"Missing\" WHERE\n(SELECT COUNT(*)\n FROM pg_class\n WHERE relname = :indexName) < 1",
+  "class": "edu.usf.RuleChains.SQLQuery"
+}
