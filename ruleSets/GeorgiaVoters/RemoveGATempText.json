@@ -1,0 +1,5 @@
+{
+  "name": "RemoveGATempText2",
+  "rule": "println \"Deleting the import file: ${row.importFile}\"\n(new File(row.importFile.toString())).delete()\nreturn [ row ]",
+  "class": "edu.usf.RuleChains.Groovy"
+}

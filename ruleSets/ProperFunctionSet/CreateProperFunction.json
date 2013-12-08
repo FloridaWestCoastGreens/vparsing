@@ -1,0 +1,5 @@
+{
+  "name": "CreateProperFunction",
+  "rule": "CREATE FUNCTION proper( str VARCHAR(128) )\nRETURNS VARCHAR(128)\nBEGIN\n  DECLARE c CHAR(1);\n  DECLARE s VARCHAR(128);\n  DECLARE i INT DEFAULT 1;\n  DECLARE bool INT DEFAULT 1;\n  DECLARE punct CHAR(17) DEFAULT ' ()[]{},.-_!@;:?/';\n  SET s = LCASE( str );\n  WHILE i < LENGTH( str ) DO \n    BEGIN\n      SET c = SUBSTRING( s, i, 1 );\n      IF LOCATE( c, punct ) > 0 THEN\n        SET bool = 1;\n      ELSEIF bool=1 THEN \n        BEGIN\n          IF c >= 'a' AND c <= 'z' THEN \n            BEGIN\n              SET s = CONCAT(LEFT(s,i-1),UCASE(c),SUBSTRING(s,i+1));\n              SET bool = 0;\n            END;\n          ELSEIF c >= '0' AND c <= '9' THEN\n            SET bool = 0;\n          END IF;\n        END;\n      END IF;\n      SET i = i+1;\n    END;\n  END WHILE;\n  RETURN s;\nEND;\n",
+  "class": "edu.usf.RuleChains.SQLQuery"
+}

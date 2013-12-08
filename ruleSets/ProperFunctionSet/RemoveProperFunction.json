@@ -1,0 +1,5 @@
+{
+  "name": "RemoveProperFunction",
+  "rule": "DROP FUNCTION IF EXISTS proper",
+  "class": "edu.usf.RuleChains.SQLQuery"
+}

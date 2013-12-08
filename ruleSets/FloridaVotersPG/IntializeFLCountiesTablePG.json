@@ -1,0 +1,5 @@
+{
+  "name": "IntializeFLCountiesTablePG2",
+  "rule": "CREATE TABLE IF NOT EXISTS \"Florida\".\"County Codes\" (\n\t\"County Code\" varchar(3) NOT NULL,\n\t\"County Description\" varchar(128),\n\tCONSTRAINT \"County Codes_pkey\" PRIMARY KEY (\"County Code\")\n)\nWITH (OIDS=FALSE)",
+  "class": "edu.usf.RuleChains.SQLQuery"
+}

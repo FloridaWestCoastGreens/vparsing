@@ -1,0 +1,5 @@
+{
+  "name": "AddFLCountiesIndexes2",
+  "rule": "[\n\t[idx: 'FLCounty Codes_County Code_idx', name: 'County Code'],\n\t[idx: 'FLCounty Codes_County Description_idx', name: 'County Description'],\n].each { i ->\n\tif(sql.firstRow(\"\"\"SELECT COUNT(*) AS \"ExistCount\" FROM pg_class WHERE relname = :indexName\"\"\",[indexName:i.idx]).ExistCount < 1) {\n\t\tsql.executeUpdate(\"\"\"CREATE INDEX \"${i.idx}\" ON \"Georgia\".\"County Codes\" USING btree (\"${i.name}\")\"\"\")\n\t}\n}",
+  "class": "edu.usf.RuleChains.Groovy"
+}

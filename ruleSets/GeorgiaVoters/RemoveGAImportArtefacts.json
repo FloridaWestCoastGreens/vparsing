@@ -1,0 +1,5 @@
+{
+  "name": "RemoveGAImportArtefacts",
+  "rule": "DELETE FROM `Voters` WHERE `ExportDate`=STR_TO_DATE('${snapshotDate}','%Y%m%d')",
+  "class": "edu.usf.RuleChains.SQLQuery"
+}

@@ -1,0 +1,5 @@
+{
+  "name": "IntializeGACountiesTable2",
+  "rule": "CREATE TABLE IF NOT EXISTS `County Codes` (\n  `County Code` char(3) COLLATE utf8_unicode_ci NOT NULL,\n  `County Description` varchar(60) COLLATE utf8_unicode_ci DEFAULT NULL,\n  PRIMARY KEY (`County Code`),\n  UNIQUE KEY `County Code` (`County Code`) USING BTREE,\n  UNIQUE KEY `County Description` (`County Description`)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci",
+  "class": "edu.usf.RuleChains.SQLQuery"
+}

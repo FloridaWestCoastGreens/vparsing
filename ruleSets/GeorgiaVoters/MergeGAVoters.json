@@ -1,0 +1,5 @@
+{
+  "name": "MergeGAVoters2",
+  "rule": "REPLACE INTO `Voters` SELECT * FROM `Voters_import`",
+  "class": "edu.usf.RuleChains.SQLQuery"
+}

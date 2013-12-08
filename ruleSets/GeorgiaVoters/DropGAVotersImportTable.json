@@ -1,0 +1,5 @@
+{
+  "name": "DropGAVotersImportTable2",
+  "rule": "DROP TABLE IF EXISTS `Voters_import`",
+  "class": "edu.usf.RuleChains.SQLQuery"
+}

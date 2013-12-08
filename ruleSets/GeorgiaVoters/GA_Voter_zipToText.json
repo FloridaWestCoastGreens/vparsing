@@ -1,0 +1,5 @@
+{
+  "name": "GA_Voter_zipToText2",
+  "rule": "def settings = [\n\timportFolder: '/usr/share/tomcat/Voters/Georgia',\n\timportFolderMac: '/Applications/NetBeans/apache-tomcat-7.0.41/Voters/Georgia',\n\tzipName: \"Georgia_Voters_Fixed.zip\",\n\tcompressedFile: 'DailyVoterBase_Fixed.txt'\n]\ndef zipFile = new java.util.zip.ZipFile(new File(settings.importFolder,settings.zipName))\n\ndef voterEntry = zipFile.entries().findAll { !it.directory }.find { it.name == settings.compressedFile }\ndef modificationTime = (new Date(voterEntry.getTime())).format(\"yyyyMMdd\")\nprintln \"${modificationTime} Mod Time\"\nprintln \"Entry is ${voterEntry.name}\"\n\ndef unparsedTextFile = File.createTempFile('temp', '.txt')\nunparsedTextFile.withWriter('unicode'){ w->\n\tdef reader = new BufferedReader(new InputStreamReader(zipFile.getInputStream(voterEntry), \"UTF-8\"))\n\treader.eachLine { line -> \n\t\tw<< line\n\t}\n}\nprintln \"Temp file path: ${unparsedTextFile.canonicalPath}\"\nreturn [\n\t[\n\t\timportFile: unparsedTextFile.canonicalPath,\n\t\tsnapshotDate: modificationTime\n\t]\n]\n",
+  "class": "edu.usf.RuleChains.Groovy"
+}
