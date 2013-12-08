@@ -1,0 +1,11 @@
+{
+  "sequenceNumber": 2,
+  "sourceName": "gpfl",
+  "inputReorder": "",
+  "outputReorder": "",
+  "executeEnum": "NORMAL",
+  "resultEnum": "RECORDSET",
+  "linkEnum": "LOOP",
+  "rule": "FL_Voter_zipsToTextFragments",
+  "class": "edu.usf.RuleChains.Link"
+}

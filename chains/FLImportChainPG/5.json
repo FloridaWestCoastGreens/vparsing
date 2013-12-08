@@ -1,0 +1,11 @@
+{
+  "sequenceNumber": 5,
+  "sourceName": "gpga_pg",
+  "inputReorder": "",
+  "outputReorder": "",
+  "executeEnum": "NORMAL",
+  "resultEnum": "NONE",
+  "linkEnum": "NONE",
+  "rule": "AddFLVotersTableIndexes",
+  "class": "edu.usf.RuleChains.Link"
+}

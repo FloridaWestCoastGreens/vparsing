@@ -1,0 +1,11 @@
+{
+  "sequenceNumber": 4,
+  "sourceName": "gpfl",
+  "inputReorder": "",
+  "outputReorder": "",
+  "executeEnum": "EXECUTE_USING_ROW",
+  "resultEnum": "UPDATE",
+  "linkEnum": "ENDLOOP",
+  "rule": "AppendCountyUniqueElections",
+  "class": "edu.usf.RuleChains.Link"
+}

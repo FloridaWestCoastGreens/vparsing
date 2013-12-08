@@ -1,0 +1,11 @@
+{
+  "sequenceNumber": 2,
+  "sourceName": "gpga_pg",
+  "inputReorder": "",
+  "outputReorder": "",
+  "executeEnum": "NORMAL",
+  "resultEnum": "NONE",
+  "linkEnum": "NONE",
+  "rule": "AddFLCountiesIndexes",
+  "class": "edu.usf.RuleChains.Link"
+}

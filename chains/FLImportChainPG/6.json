@@ -1,0 +1,11 @@
+{
+  "sequenceNumber": 6,
+  "sourceName": "gpga_pg",
+  "inputReorder": "",
+  "outputReorder": "",
+  "executeEnum": "NORMAL",
+  "resultEnum": "NONE",
+  "linkEnum": "NONE",
+  "rule": "FLVotersZipMerge",
+  "class": "edu.usf.RuleChains.Link"
+}

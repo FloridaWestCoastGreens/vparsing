@@ -1,0 +1,11 @@
+{
+  "sequenceNumber": 3,
+  "sourceName": "gpfl",
+  "inputReorder": "",
+  "outputReorder": "",
+  "executeEnum": "NORMAL",
+  "resultEnum": "UPDATE",
+  "linkEnum": "NONE",
+  "rule": "DropFLVotersImportTable",
+  "class": "edu.usf.RuleChains.Link"
+}
