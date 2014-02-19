@@ -1,0 +1,5 @@
+{
+  "name": "PGSchemaExistsTest",
+  "rule": "",
+  "class": "edu.usf.RuleChains.SQLQuery"
+}
