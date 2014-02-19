@@ -1,11 +1,11 @@
 {
-  "sequenceNumber": 6,
+  "sequenceNumber": 5,
   "sourceName": "gpga_pg",
   "inputReorder": "",
   "outputReorder": "",
   "executeEnum": "NORMAL",
   "resultEnum": "UPDATE",
-  "linkEnum": "NONE",
-  "rule": "PopulateGACountiesPG",
+  "linkEnum": "ENDLOOP",
+  "rule": "AddIndexGACountiesCountyDescription",
   "class": "edu.usf.RuleChains.Link"
 }
