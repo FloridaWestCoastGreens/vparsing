@@ -1,5 +1,5 @@
 {
   "name": "GAUnmatchedToMatched",
-  "rule": "",
+  "rule": "INSERT INTO Matched\nSELECT * FROM Unmatched WHERE RegistrationNbr IS NOT NULL",
   "class": "edu.usf.RuleChains.SQLQuery"
 }
