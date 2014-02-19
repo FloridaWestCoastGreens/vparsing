@@ -1,7 +1,7 @@
 {
   "sequenceNumber": 4,
   "sourceName": "gpga_pg",
-  "inputReorder": "return [\n\tindexName: 'County Codes_County Description_idx'\n]",
+  "inputReorder": "return [\n\tindexName: 'County Codes_County Code_idx'\n]",
   "outputReorder": "",
   "executeEnum": "EXECUTE_USING_ROW",
   "resultEnum": "RECORDSET",
