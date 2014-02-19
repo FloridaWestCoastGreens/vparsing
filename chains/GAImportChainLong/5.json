@@ -1,0 +1,11 @@
+{
+  "sequenceNumber": 5,
+  "sourceName": "gpga",
+  "inputReorder": "",
+  "outputReorder": "",
+  "executeEnum": "NORMAL",
+  "resultEnum": "UPDATE",
+  "linkEnum": "NONE",
+  "rule": "InitializeGAVotersImportTable",
+  "class": "edu.usf.RuleChains.Link"
+}
