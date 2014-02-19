@@ -1,5 +1,5 @@
 {
   "name": "GAAddStienEmailsToIdentifiers",
-  "rule": "",
+  "rule": "INSERT IGNORE INTO identifiers\nSELECT et.* FROM (\n\tSELECT :type AS `type`,`E-mail 1 - Value` AS `value`,:contactId AS `contact_id` FROM StienGoogleContactMatches WHERE `Custom Field 2 - Value` = :RegistrationNbr AND LENGTH(TRIM(`E-mail 1 - Value`)) > 1\n\tUNION\n\tSELECT :type AS `type`,`E-mail 2 - Value` AS `value`,:contactId AS `contact_id` FROM StienGoogleContactMatches WHERE `Custom Field 2 - Value` = :RegistrationNbr AND LENGTH(TRIM(`E-mail 2 - Value`)) > 1\n\tUNION\n\tSELECT :type AS `type`,`E-mail 3 - Value` AS `value`,:contactId AS `contact_id` FROM StienGoogleContactMatches WHERE `Custom Field 2 - Value` = :RegistrationNbr AND LENGTH(TRIM(`E-mail 3 - Value`)) > 1\n\tUNION\n\tSELECT :type AS `type`,`E-mail 4 - Value` AS `value`,:contactId AS `contact_id` FROM StienGoogleContactMatches WHERE `Custom Field 2 - Value` = :RegistrationNbr AND LENGTH(TRIM(`E-mail 4 - Value`)) > 1\n) AS et",
   "class": "edu.usf.RuleChains.SQLQuery"
 }
