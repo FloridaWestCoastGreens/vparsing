@@ -1,0 +1,5 @@
+{
+  "name": "GARemoveMatchedinUnmatched",
+  "rule": "",
+  "class": "edu.usf.RuleChains.SQLQuery"
+}
