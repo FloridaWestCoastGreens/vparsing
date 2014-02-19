@@ -1,5 +1,5 @@
 {
   "name": "GACreateIdentifiersTable",
-  "rule": "",
+  "rule": "CREATE TABLE IF NOT EXISTS `identifiers` (\n  `type` varbinary(64) NOT NULL,\n  `value` varbinary(256) NOT NULL,\n  `contact_id` bigint(20) unsigned NOT NULL,\n  PRIMARY KEY (`type`,`value`),\n  KEY `type` (`type`),\n  KEY `value` (`value`),\n  KEY `contact_id` (`contact_id`)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci",
   "class": "edu.usf.RuleChains.SQLQuery"
 }
