@@ -1,5 +1,5 @@
 {
   "name": "FLNewMatchedContactsList",
-  "rule": "",
+  "rule": "SELECT gc.`Custom Field 2 - Value` AS `Voter ID`,\ngc.`Given Name`\t AS `First Name`,\ngc.`Additional Name` AS `Middle Name`,\ngc.`Family Name` AS `Last Name`,\ngc.`Address 1 - Street` AS `Street Address`,\ngc.`Address 1 - City` AS `City`,\ngc.`Address 1 - Region` AS `State`,\ngc.`Address 1 - Postal Code` AS `Postal Code`\nFROM GoogleContactMatches gc\nWHERE gc.`Custom Field 2 - Value` NOT IN(\n\tSELECT  c.`Voter ID` FROM `Contacts` c\n)",
   "class": "edu.usf.RuleChains.SQLQuery"
 }
