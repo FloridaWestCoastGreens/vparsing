@@ -1,0 +1,11 @@
+{
+  "sequenceNumber": 2,
+  "sourceName": "gpga",
+  "inputReorder": "",
+  "outputReorder": "",
+  "executeEnum": "EXECUTE_USING_ROW",
+  "resultEnum": "NONE",
+  "linkEnum": "ENDLOOP",
+  "rule": "GAMembershipMatchingScript",
+  "class": "edu.usf.RuleChains.Link"
+}
