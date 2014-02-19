@@ -1,11 +1,11 @@
 {
-  "sequenceNumber": 5,
+  "sequenceNumber": 6,
   "sourceName": "gpfl",
-  "inputReorder": "return [\n\tCountyCode: row.CountyCode\n]",
+  "inputReorder": "",
   "outputReorder": "",
-  "executeEnum": "EXECUTE_USING_ROW",
+  "executeEnum": "NORMAL",
   "resultEnum": "RECORDSET",
   "linkEnum": "LOOP",
-  "rule": "GetUniqueVotersByCountyHistory",
+  "rule": "ListCountyCodesWithExportDate",
   "class": "edu.usf.RuleChains.Link"
 }
