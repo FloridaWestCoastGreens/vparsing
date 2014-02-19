@@ -1,5 +1,5 @@
 {
   "name": "PGSchemaExistsTest",
-  "rule": "",
+  "rule": "SELECT :myschema AS myschema\nWHERE (\n\tselect COUNT(*)\n\tfrom pg_catalog.pg_namespace WHERE nspname=:myschema\n) < 1",
   "class": "edu.usf.RuleChains.SQLQuery"
 }
