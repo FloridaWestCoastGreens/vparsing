@@ -1,5 +1,5 @@
 {
   "name": "FLContactIdentifiersCreateTable",
-  "rule": "",
+  "rule": "CREATE TABLE IF NOT EXISTS `Contact Identifiers` (\n  `type` varbinary(64) NOT NULL,\n  `value` varbinary(256) NOT NULL,\n  `Contact ID` bigint(20) unsigned NOT NULL,\n  PRIMARY KEY (`type`,`value`,`Contact ID`),\n  KEY `type` (`type`),\n  KEY `value` (`value`),\n  KEY `Contact ID` (`Contact ID`) USING BTREE\n) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci",
   "class": "edu.usf.RuleChains.SQLQuery"
 }
