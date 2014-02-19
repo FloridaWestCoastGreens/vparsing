@@ -3,7 +3,7 @@
   "sourceName": "gpfl",
   "inputReorder": "return [\n\timportFolder: rcGlobals.importFLFolder\n]",
   "outputReorder": "",
-  "executeEnum": "NORMAL",
+  "executeEnum": "EXECUTE_USING_ROW",
   "resultEnum": "RECORDSET",
   "linkEnum": "LOOP",
   "rule": "FL_History_zipsToTextFragments",
