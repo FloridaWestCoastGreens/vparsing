@@ -1,0 +1,5 @@
+{
+  "name": "FLContactsTableCreate",
+  "rule": "",
+  "class": "edu.usf.RuleChains.SQLQuery"
+}
