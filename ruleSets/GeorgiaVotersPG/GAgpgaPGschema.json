@@ -1,5 +1,5 @@
 {
   "name": "GAgpgaPGschema",
-  "rule": "",
+  "rule": "CREATE SCHEMA IF NOT EXISTS gpga",
   "class": "edu.usf.RuleChains.SQLQuery"
 }
