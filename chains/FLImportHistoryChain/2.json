@@ -1,7 +1,7 @@
 {
   "sequenceNumber": 2,
   "sourceName": "gpfl",
-  "inputReorder": "",
+  "inputReorder": "return [\n\timportFolder: rcGlobals.importFLFolder\n]",
   "outputReorder": "",
   "executeEnum": "NORMAL",
   "resultEnum": "RECORDSET",
