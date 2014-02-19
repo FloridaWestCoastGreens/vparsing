@@ -1,5 +1,5 @@
 {
   "name": "FLAddNewContact",
-  "rule": "",
+  "rule": "INSERT INTO `Contacts` (`Voter ID`,`First Name`,`Last Name`,`Street Address`,`City`,`State`,`Postal Code`)\nVALUES (:VoterID,:FirstName,:LastName,:StreetAddress,:City,:State,:PostalCode)",
   "class": "edu.usf.RuleChains.SQLQuery"
 }
