@@ -1,5 +1,5 @@
 {
   "name": "GAMembershipList",
-  "rule": "",
+  "rule": "SELECT * FROM Membership",
   "class": "edu.usf.RuleChains.SQLQuery"
 }
