@@ -1,0 +1,11 @@
+{
+  "sequenceNumber": 5,
+  "sourceName": "gpga",
+  "inputReorder": "",
+  "outputReorder": "",
+  "executeEnum": "NORMAL",
+  "resultEnum": "RECORDSET",
+  "linkEnum": "LOOP",
+  "rule": "GAUnmatchedList",
+  "class": "edu.usf.RuleChains.Link"
+}
