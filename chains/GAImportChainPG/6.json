@@ -1,11 +1,11 @@
 {
-  "sequenceNumber": 5,
+  "sequenceNumber": 6,
   "sourceName": "gpga_pg",
-  "inputReorder": "",
+  "inputReorder": "return [\n\tindexName: 'County Codes_County Description_idx'\n]",
   "outputReorder": "",
-  "executeEnum": "NORMAL",
-  "resultEnum": "UPDATE",
-  "linkEnum": "ENDLOOP",
-  "rule": "AddIndexGACountiesCountyDescription",
+  "executeEnum": "EXECUTE_USING_ROW",
+  "resultEnum": "RECORDSET",
+  "linkEnum": "LOOP",
+  "rule": "IndexExistTestPG",
   "class": "edu.usf.RuleChains.Link"
 }
