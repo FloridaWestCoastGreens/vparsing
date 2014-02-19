@@ -1,0 +1,11 @@
+{
+  "sequenceNumber": 8,
+  "sourceName": "gpfl",
+  "inputReorder": "return [\n\t'ContactID': row.ContactID,\n\t'VoterID': row.VoterID\n]",
+  "outputReorder": "",
+  "executeEnum": "EXECUTE_USING_ROW",
+  "resultEnum": "UPDATE",
+  "linkEnum": "ENDLOOP",
+  "rule": "FLEmailToContactIdentifiers",
+  "class": "edu.usf.RuleChains.Link"
+}
