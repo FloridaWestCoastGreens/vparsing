@@ -1,0 +1,11 @@
+{
+  "sequenceNumber": 2,
+  "sourceName": "gpga",
+  "inputReorder": "",
+  "outputReorder": "",
+  "executeEnum": "NORMAL",
+  "resultEnum": "UPDATE",
+  "linkEnum": "NONE",
+  "rule": "GAUnmatchedTrunc",
+  "class": "edu.usf.RuleChains.Link"
+}
