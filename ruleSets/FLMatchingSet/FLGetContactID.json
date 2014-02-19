@@ -1,5 +1,5 @@
 {
   "name": "FLGetContactID",
-  "rule": "",
+  "rule": "SELECT id AS `ContactID` FROM `Contacts` WHERE `Voter ID` = :VoterID",
   "class": "edu.usf.RuleChains.SQLQuery"
 }
