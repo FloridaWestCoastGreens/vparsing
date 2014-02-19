@@ -1,0 +1,11 @@
+{
+  "sequenceNumber": 18,
+  "sourceName": "gpga",
+  "inputReorder": "",
+  "outputReorder": "",
+  "executeEnum": "NORMAL",
+  "resultEnum": "UPDATE",
+  "linkEnum": "NONE",
+  "rule": "GAClearMatchedTable",
+  "class": "edu.usf.RuleChains.Link"
+}
