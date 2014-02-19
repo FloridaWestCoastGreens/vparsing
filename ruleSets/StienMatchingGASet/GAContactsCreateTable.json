@@ -1,5 +1,5 @@
 {
   "name": "GAContactsCreateTable",
-  "rule": "",
+  "rule": "CREATE TABLE IF NOT EXISTS `Contacts` (\n\t`id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,\n\t`RegistrationNbr` bigint(20) DEFAULT NULL,\n\t`First Name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,\n\t`Last Name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,\n\t`Street Address` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,\n\t`City` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,\n\t`State` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,\n\t`Postal Code` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,\n\tPRIMARY KEY (`id`)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;\n",
   "class": "edu.usf.RuleChains.SQLQuery"
 }
