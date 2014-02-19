@@ -1,5 +1,5 @@
 {
   "name": "GAAddIdentifier",
-  "rule": "",
+  "rule": "INSERT IGNORE INTO `identifiers` (`type`,`value`,`contact_id`) VALUES (:type,:value,:contactId)",
   "class": "edu.usf.RuleChains.SQLQuery"
 }
