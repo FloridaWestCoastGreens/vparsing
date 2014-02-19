@@ -1,0 +1,11 @@
+{
+  "sequenceNumber": 16,
+  "sourceName": "gpga",
+  "inputReorder": "return [\n\t'contactId': row.contact_id,\n\t'type': 'Nationbuilder ID: Stien',\n\t'value': row.id\n]",
+  "outputReorder": "",
+  "executeEnum": "EXECUTE_USING_ROW",
+  "resultEnum": "UPDATE",
+  "linkEnum": "NEXT",
+  "rule": "GAAddIdentifier",
+  "class": "edu.usf.RuleChains.Link"
+}
