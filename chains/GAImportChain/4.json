@@ -1,0 +1,11 @@
+{
+  "sequenceNumber": 4,
+  "sourceName": "gpga",
+  "inputReorder": "",
+  "outputReorder": "",
+  "executeEnum": "NORMAL",
+  "resultEnum": "RECORDSET",
+  "linkEnum": "LOOP",
+  "rule": "GA_Voter_zipToTextFragments",
+  "class": "edu.usf.RuleChains.Link"
+}
