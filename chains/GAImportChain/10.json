@@ -1,0 +1,11 @@
+{
+  "sequenceNumber": 10,
+  "sourceName": "gpga",
+  "inputReorder": "",
+  "outputReorder": "",
+  "executeEnum": "EXECUTE_USING_ROW",
+  "resultEnum": "UPDATE",
+  "linkEnum": "ENDLOOP",
+  "rule": "RemoveGATempText",
+  "class": "edu.usf.RuleChains.Link"
+}
