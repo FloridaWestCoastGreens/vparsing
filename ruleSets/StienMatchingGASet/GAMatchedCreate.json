@@ -1,5 +1,5 @@
 {
   "name": "GAMatchedCreate",
-  "rule": "",
+  "rule": "CREATE TABLE IF NOT EXISTS `Matched` (\n  `id` bigint(20) DEFAULT NULL,\n  `RegistrationNbr` bigint(20) DEFAULT NULL,\n  `First Name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,\n  `Last Name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,\n  `Street Address` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,\n  `City` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,\n  `State/Province` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,\n  `Postal Code` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL\n) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;",
   "class": "edu.usf.RuleChains.SQLQuery"
 }
