@@ -1,5 +1,5 @@
 {
   "name": "GAUnmatchedList",
-  "rule": "",
+  "rule": "SELECT * FROM `Unmatched`",
   "class": "edu.usf.RuleChains.SQLQuery"
 }
