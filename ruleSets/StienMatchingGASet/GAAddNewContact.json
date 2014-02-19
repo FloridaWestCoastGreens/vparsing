@@ -1,5 +1,5 @@
 {
   "name": "GAAddNewContact",
-  "rule": "",
+  "rule": "INSERT INTO `Contacts` (`RegistrationNbr`,`First Name`,`Last Name`,`Street Address`,`City`,`State`,`Postal Code`)\nVALUES (:RegistrationNbr,:FirstName,:LastName,:StreetAddress,:City,:State,:PostalCode)",
   "class": "edu.usf.RuleChains.SQLQuery"
 }
