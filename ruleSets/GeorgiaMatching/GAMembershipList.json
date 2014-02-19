@@ -1,0 +1,5 @@
+{
+  "name": "GAMembershipList",
+  "rule": "",
+  "class": "edu.usf.RuleChains.SQLQuery"
+}
