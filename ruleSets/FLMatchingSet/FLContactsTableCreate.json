@@ -1,5 +1,5 @@
 {
   "name": "FLContactsTableCreate",
-  "rule": "",
+  "rule": "CREATE TABLE IF NOT EXISTS `Contacts` (\n  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,\n  `Voter ID` bigint(20) DEFAULT NULL,\n  `First Name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,\n  `Middle Name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,\n  `Last Name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,\n  `Street Address` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,\n  `City` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,\n  `State` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,\n  `Postal Code` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,\n  PRIMARY KEY (`id`)\n) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci",
   "class": "edu.usf.RuleChains.SQLQuery"
 }
