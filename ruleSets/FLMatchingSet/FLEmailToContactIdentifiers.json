@@ -1,5 +1,5 @@
 {
   "name": "FLEmailToContactIdentifiers",
-  "rule": "",
+  "rule": "INSERT INTO `Contact Identifiers` (`Contact ID`,`type`,`value`)\nSELECT e.`Contact ID`,e.`type`,e.`value` FROM (\n\tSELECT :ContactID AS `Contact ID`,'E-mail' AS `type`,`E-mail 1 - Value` AS `value` FROM GoogleContactMatches gc  WHERE gc.`Custom Field 2 - Value` = :VoterID \n\tUNION DISTINCT\n\tSELECT :ContactID AS `Contact ID`,'Phone' AS `type`,`Phone 1 - Value` AS `value` FROM GoogleContactMatches gc  WHERE gc.`Custom Field 2 - Value` = :VoterID \n\tUNION DISTINCT\n\tSELECT :ContactID AS `Contact ID`,'Phone' AS `type`,`Phone 2 - Value` AS `value` FROM GoogleContactMatches gc  WHERE gc.`Custom Field 2 - Value` = :VoterID \n) e WHERE LENGTH(TRIM(e.`value`)) > 0 AND (\n\tSELECT COUNT(*) FROM `Contact Identifiers` ci \n\tWHERE ci.`Contact ID`=e.`Contact ID` AND\n\tci.`type`=e.`type` AND\n\tci.`value`=e.`value`\n) < 1",
   "class": "edu.usf.RuleChains.SQLQuery"
 }
