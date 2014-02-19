@@ -1,0 +1,11 @@
+{
+  "sequenceNumber": 8,
+  "sourceName": "gpga",
+  "inputReorder": "",
+  "outputReorder": "",
+  "executeEnum": "NORMAL",
+  "resultEnum": "UPDATE",
+  "linkEnum": "NEXT",
+  "rule": "MergeGAVoters",
+  "class": "edu.usf.RuleChains.Link"
+}
