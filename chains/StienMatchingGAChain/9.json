@@ -1,0 +1,11 @@
+{
+  "sequenceNumber": 9,
+  "sourceName": "gpga",
+  "inputReorder": "",
+  "outputReorder": "",
+  "executeEnum": "NORMAL",
+  "resultEnum": "UPDATE",
+  "linkEnum": "NONE",
+  "rule": "GAStienContactTableInit",
+  "class": "edu.usf.RuleChains.Link"
+}
