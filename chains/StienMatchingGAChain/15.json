@@ -1,0 +1,11 @@
+{
+  "sequenceNumber": 15,
+  "sourceName": "gpga",
+  "inputReorder": "",
+  "outputReorder": "",
+  "executeEnum": "NORMAL",
+  "resultEnum": "APPENDTOROW",
+  "linkEnum": "NONE",
+  "rule": "GAGetMaxContactId",
+  "class": "edu.usf.RuleChains.Link"
+}
