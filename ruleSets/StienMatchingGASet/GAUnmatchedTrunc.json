@@ -1,5 +1,5 @@
 {
   "name": "GAUnmatchedTrunc",
-  "rule": "",
+  "rule": "TRUNCATE TABLE `Unmatched`",
   "class": "edu.usf.RuleChains.SQLQuery"
 }
