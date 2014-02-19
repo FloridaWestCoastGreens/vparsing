@@ -1,0 +1,11 @@
+{
+  "sequenceNumber": 17,
+  "sourceName": "gpga",
+  "inputReorder": "return [\n\t'contactId': row.contact_id,\n\t'type': 'E-mail',\n\t'RegistrationNbr': row.RegistrationNbr\n]",
+  "outputReorder": "",
+  "executeEnum": "EXECUTE_USING_ROW",
+  "resultEnum": "UPDATE",
+  "linkEnum": "ENDLOOP",
+  "rule": "GAAddStienEmailsToIdentifiers",
+  "class": "edu.usf.RuleChains.Link"
+}
