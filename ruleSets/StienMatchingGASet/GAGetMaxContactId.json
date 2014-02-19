@@ -1,5 +1,5 @@
 {
   "name": "GAGetMaxContactId",
-  "rule": "",
+  "rule": "SELECT `id` AS `contact_id` FROM `Contacts` ORDER BY `id` DESC LIMIT 1",
   "class": "edu.usf.RuleChains.SQLQuery"
 }
