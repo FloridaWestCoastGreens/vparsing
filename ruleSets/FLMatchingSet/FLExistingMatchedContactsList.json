@@ -1,5 +1,5 @@
 {
   "name": "FLExistingMatchedContactsList",
-  "rule": "",
+  "rule": "SELECT c.id AS `Contact ID`,c.`Voter ID` FROM GoogleContactMatches gc \nJOIN `Contacts` AS c ON gc.`Custom Field 2 - Value` = c.`Voter ID`",
   "class": "edu.usf.RuleChains.SQLQuery"
 }
