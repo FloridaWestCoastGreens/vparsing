@@ -1,0 +1,11 @@
+{
+  "sequenceNumber": 14,
+  "sourceName": "gpga",
+  "inputReorder": "return row.inject([:]) { r,k,v ->\n\tif(k in ['RegistrationNbr','First Name','Last Name','Street Address','City','Postal Code']) {\n\t\tr[k.replaceAll(/\\s/,'')] = v\n\t}\n\treturn r\n}",
+  "outputReorder": "",
+  "executeEnum": "EXECUTE_USING_ROW",
+  "resultEnum": "UPDATE",
+  "linkEnum": "NONE",
+  "rule": "GAAddNewContact",
+  "class": "edu.usf.RuleChains.Link"
+}
