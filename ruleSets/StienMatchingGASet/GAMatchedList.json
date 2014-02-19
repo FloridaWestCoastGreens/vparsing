@@ -1,5 +1,5 @@
 {
   "name": "GAMatchedList",
-  "rule": "",
+  "rule": "SELECT * FROM `Matched`",
   "class": "edu.usf.RuleChains.SQLQuery"
 }
