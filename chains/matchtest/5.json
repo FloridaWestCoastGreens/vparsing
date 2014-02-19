@@ -1,0 +1,11 @@
+{
+  "sequenceNumber": 5,
+  "sourceName": "gpfl",
+  "inputReorder": "",
+  "outputReorder": "return row.inject([:]) { r,k,v ->\n\tif(k in ['Voter ID','First Name','Middle Name','Last Name','Street Address','City','State','Postal Code']) {\n\t\tr[k.replaceAll(/\\s/,'')] = v\n\t}\n\treturn r\n}",
+  "executeEnum": "NORMAL",
+  "resultEnum": "RECORDSET",
+  "linkEnum": "LOOP",
+  "rule": "FLNewMatchedContactsList",
+  "class": "edu.usf.RuleChains.Link"
+}
