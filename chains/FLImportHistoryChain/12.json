@@ -6,6 +6,6 @@
   "executeEnum": "NORMAL",
   "resultEnum": "UPDATE",
   "linkEnum": "NEXT",
-  "rule": "DropFLHistoryImportTable",
+  "rule": "LoadFLHistory",
   "class": "edu.usf.RuleChains.Link"
 }
