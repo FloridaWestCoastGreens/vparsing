@@ -6,6 +6,6 @@
   "executeEnum": "NORMAL",
   "resultEnum": "UPDATE",
   "linkEnum": "NEXT",
-  "rule": "InitializeFLHistoryImportTable",
+  "rule": "MergeFLHistory",
   "class": "edu.usf.RuleChains.Link"
 }
