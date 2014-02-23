@@ -1,0 +1,11 @@
+{
+  "sequenceNumber": 10,
+  "sourceName": "gpfl",
+  "inputReorder": "",
+  "outputReorder": "",
+  "executeEnum": "NORMAL",
+  "resultEnum": "UPDATE",
+  "linkEnum": "NEXT",
+  "rule": "LoadFLHistory",
+  "class": "edu.usf.RuleChains.Link"
+}
