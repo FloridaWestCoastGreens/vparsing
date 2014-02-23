@@ -1,0 +1,12 @@
+{
+  "group": "DEFAULT",
+  "name": "FLImportHistoryChain:1393187989708",
+  "triggers": 
+  [
+    "5 40 15 23 2 ? 2014"
+  ],
+  "chain": "FLImportHistoryChain",
+  "input": 
+  [
+  ]
+}
