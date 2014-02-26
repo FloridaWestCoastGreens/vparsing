@@ -1,0 +1,12 @@
+{
+  "group": "DEFAULT",
+  "name": "BuildSuperVoters:1393418897479",
+  "triggers": 
+  [
+    "28 49 7 26 2 ? 2014"
+  ],
+  "chain": "BuildSuperVoters",
+  "input": 
+  [
+  ]
+}
