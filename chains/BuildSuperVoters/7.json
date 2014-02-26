@@ -1,11 +1,11 @@
 {
-  "sequenceNumber": 10,
+  "sequenceNumber": 7,
   "sourceName": "gpfl",
   "inputReorder": "",
   "outputReorder": "",
   "executeEnum": "EXECUTE_USING_ROW",
-  "resultEnum": "UPDATE",
-  "linkEnum": "ENDLOOP",
-  "rule": "AppendSuperVoters",
+  "resultEnum": "RECORDSET",
+  "linkEnum": "LOOP",
+  "rule": "GetUniqueVotersByCountyHistory",
   "class": "edu.usf.RuleChains.Link"
 }
