@@ -1,0 +1,12 @@
+{
+  "group": "DEFAULT",
+  "name": "RebuildElectionsTable:1393382418690",
+  "triggers": 
+  [
+    "5 41 21 25 2 ? 2014"
+  ],
+  "chain": "RebuildElectionsTable",
+  "input": 
+  [
+  ]
+}
