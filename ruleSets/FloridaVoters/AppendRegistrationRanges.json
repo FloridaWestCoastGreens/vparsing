@@ -1,5 +1,5 @@
 {
   "name": "AppendRegistrationRanges",
-  "rule": "",
+  "rule": "INSERT INTO VoterRegistrationRanges\nSELECT\n\ths2.county_code AS county_code,\n\ths2.voter_id AS voter_id,\n\tMAX(hs2.max_election_date) AS max_election_date,\n\tMIN(hs2.max_election_date) AS min_election_date,\n\tSUM(hs2.election_count) AS election_count\nFROM (\n\tSELECT \n\t\ths.county_code AS county_code,\n\t\ths.voter_id AS voter_id,\n\t\ths.election_type AS election_type,\n\t\ths.max_election_date AS max_election_date,\n\t\ths.min_election_date AS min_election_date,\n\t\tIF(\n\t\t\t(SELECT party_affiliation\n\t\t\t\tFROM Voters va\n\t\t\t\tWHERE va.voter_id = hs.voter_id AND va.export_date >= hs.min_election_date \n\t\t\t\tORDER BY va.export_date ASC LIMIT 1) IN('DEM','REP'),\n\t\t\tIF(hs.election_type IN('GEN','PRI'),hs.election_count,0),\n\t\t\tIF(hs.election_type IN('GEN'),hs.election_count,0)\n\t\t) AS election_count\n\tFROM (\n\t\tSELECT\n\t\t\th.county_code AS county_code,\n\t\t\th.voter_id AS voter_id,\n\t\t\th.election_type AS election_type,\n\t\t\tMAX(h.election_date) AS max_election_date,\n\t\t\tMIN(h.election_date) AS min_election_date,\n\t\t\tCOUNT(h.election_date) AS election_count\n\t\tFROM Histories h\n\t\tGROUP BY h.county_code,h.voter_id,h.election_type\n\t) hs\n) hs2\nGROUP BY hs2.county_code,hs2.voter_id",
   "class": "edu.usf.RuleChains.SQLQuery"
 }
