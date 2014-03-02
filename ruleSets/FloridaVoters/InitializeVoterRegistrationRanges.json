@@ -1,5 +1,5 @@
 {
   "name": "InitializeVoterRegistrationRanges",
-  "rule": "",
+  "rule": "CREATE TABLE IF NOT EXISTS `VoterRegistrationRanges` (\n  `county_code` char(3) COLLATE utf8_unicode_ci NOT NULL,\n  `voter_id` bigint(18) unsigned NOT NULL,\n  `max_election_date` date NOT NULL,\n  `min_election_date` date NOT NULL,\n  `election_count` int(10) unsigned NOT NULL DEFAULT '0',\n  PRIMARY KEY (`county_code`,`voter_id`,`max_election_date`,`min_election_date`,`election_count`),\n  KEY `county_code` (`county_code`),\n  KEY `voter_id` (`voter_id`),\n  KEY `max_election_date` (`max_election_date`),\n  KEY `min_election_date` (`min_election_date`),\n  KEY `election_count` (`election_count`)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci",
   "class": "edu.usf.RuleChains.SQLQuery"
 }
