@@ -1,0 +1,11 @@
+{
+  "sequenceNumber": 9,
+  "sourceName": "gpfl",
+  "inputReorder": "",
+  "outputReorder": "",
+  "executeEnum": "EXECUTE_USING_ROW",
+  "resultEnum": "ROW",
+  "linkEnum": "ENDLOOP",
+  "rule": "RemoveFLTempText",
+  "class": "edu.usf.RuleChains.Link"
+}
