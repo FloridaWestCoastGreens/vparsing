@@ -4,7 +4,7 @@
   "inputReorder": "",
   "outputReorder": "",
   "executeEnum": "NORMAL",
-  "resultEnum": "ROW",
+  "resultEnum": "UPDATE",
   "linkEnum": "NONE",
   "rule": "DropVoterRegistrationRangesTable",
   "class": "edu.usf.RuleChains.Link"
