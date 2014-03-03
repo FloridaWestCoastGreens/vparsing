@@ -1,5 +1,5 @@
 {
   "name": "DropVoterRegistrationRangesTable",
-  "rule": "VoterRegistrationRanges",
+  "rule": "DROP TABLE IF EXISTS `VoterRegistrationRanges`",
   "class": "edu.usf.RuleChains.SQLQuery"
 }
