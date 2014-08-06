@@ -1,0 +1,7 @@
+{
+  "name": "getFLCounties",
+  "chain": "GetCountiesChain",
+  "inputReorder": "",
+  "outputReorder": "",
+  "method": "GET"
+}
