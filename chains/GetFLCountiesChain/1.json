@@ -6,6 +6,6 @@
   "executeEnum": "NORMAL",
   "resultEnum": "RECORDSET",
   "linkEnum": "NONE",
-  "rule": "GetCountiesRule",
+  "rule": "GetFLCountiesRule",
   "class": "edu.usf.RuleChains.Link"
 }
