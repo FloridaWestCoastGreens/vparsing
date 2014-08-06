@@ -1,0 +1,7 @@
+{
+  "name": "testService",
+  "chain": "testChain",
+  "inputReorder": "",
+  "outputReorder": "",
+  "method": "GET"
+}
