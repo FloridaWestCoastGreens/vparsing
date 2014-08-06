@@ -1,5 +1,5 @@
 {
   "name": "testResponse",
-  "rule": "",
+  "rule": "return []",
   "class": "edu.usf.RuleChains.Groovy"
 }
