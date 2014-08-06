@@ -2,6 +2,6 @@
   "name": "getFLCounties",
   "chain": "GetFLCountiesChain",
   "inputReorder": "",
-  "outputReorder": "return [\n\tcounties: rows\n]",
+  "outputReorder": "return [\n\tcounties: rows\n] as JSON",
   "method": "GET"
 }
