@@ -4,7 +4,7 @@
   "inputReorder": "",
   "outputReorder": "",
   "executeEnum": "NORMAL",
-  "resultEnum": "NONE",
+  "resultEnum": "RECORDSET",
   "linkEnum": "NONE",
   "rule": "getFLCountiesRule",
   "class": "edu.usf.RuleChains.Link"
