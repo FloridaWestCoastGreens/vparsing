@@ -1,5 +1,5 @@
 {
   "name": "getFLCountiesRule",
-  "rule": "",
+  "rule": "SELECT \n\tCountyCode AS `code`,\n\tCountyDescription AS `name` \nFROM CountyCodes\nORDER BY CountyDescription;",
   "class": "edu.usf.RuleChains.SQLQuery"
 }
