@@ -2,7 +2,7 @@
   "sequenceNumber": 1,
   "sourceName": "gpfl",
   "inputReorder": "",
-  "outputReorder": "return [\n\tcounties: rows\n];",
+  "outputReorder": "",
   "executeEnum": "NORMAL",
   "resultEnum": "RECORDSET",
   "linkEnum": "NONE",
