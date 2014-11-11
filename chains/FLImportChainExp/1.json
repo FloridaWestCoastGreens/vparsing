@@ -1,0 +1,10 @@
+{
+  "sourceName": "gpfl",
+  "inputReorder": "",
+  "outputReorder": "",
+  "executeEnum": "NORMAL",
+  "resultEnum": "NONE",
+  "linkEnum": "NONE",
+  "rule": "FL_Voter_zipsToDB",
+  "class": "edu.usf.RuleChains.Link"
+}
