@@ -1,0 +1,13 @@
+{
+  "group": "DEFAULT",
+  "name": "FLImportChainExp:1415729230893",
+  "triggers": 
+  [
+    "46 7 13 11 11 ? 2014"
+  ],
+  "chain": "FLImportChainExp",
+  "input": 
+  [
+  ],
+  "emailLog": ""
+}
